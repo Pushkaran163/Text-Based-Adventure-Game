@@ -1,18 +1,32 @@
-## Getting Started
+# Text-Based Adventure Game
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Overview
+The Text-Based Adventure Game is a console-based interactive fiction game built using Java. The player, represented by a character known as the "Adventurer," navigates through different rooms, interacts with objects, and experiences a textual adventure by typing commands like Go, Look, Take, Drop, Use, and Exit.
 
-## Folder Structure
+## Features
+- *Interactive Gameplay*: The player controls the Adventurer by typing simple commands.
+- *Exploration*: Move between different rooms and explore various descriptions and items.
+- *Inventory Management*: Collect and manage items found in different rooms.
+- *Simple Commands*: The game supports basic commands like Go, Look, Take, Drop, Use, and Exit.
 
-The workspace contains two folders by default, where:
+## Technologies Used
+- *Java Programming Language*: The entire game logic and functionality are implemented using Java.
+- *Java Objects and Classes*: The game structure is object-oriented, with various classes representing different game components.
+- *Data Structures*: Arrays and HashMaps are used to manage rooms, items, and game state.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## How to Play  
+1. Open the project in your favorite Java IDE (e.g., IntelliJ IDEA, Eclipse).
+2. Compile and run the TextAdventure class to start the game.
+3. Follow the on-screen prompts to navigate through the game:
+    - *Go*: Move to a different room (e.g., Go north).
+    - *Look*: Get a description of the current room.
+    - *Take*: Pick up an item (e.g., Take key).
+    - *Drop*: Drop an item from your inventory (e.g., Drop key).
+    - *Use*: Use an item from your inventory (e.g., Use key).
+    - *Exit*: Quit the game.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Project Structure
+- TextAdventure.java: The main class that initializes and runs the game loop.
+- AdventureModel.java: Manages the game state, including the current room and available commands.
+- Adventurer.java: Represents the player and tracks inventory and location.
+- Room.java: Represents different rooms in the game, each with unique descriptions and items.
